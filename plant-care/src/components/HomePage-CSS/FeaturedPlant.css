@@ -1,0 +1,27 @@
+/* Featured Plant Section */
+.featured-plant {
+  background-color: #ede7f6;
+  padding: 15px;
+  border: 1px solid #9575cd;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.featured-plant h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.featured-plant .plant-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.featured-plant h3 {
+  color: #673ab7;
+  margin-bottom: 10px;
+}

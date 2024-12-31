@@ -1,0 +1,145 @@
+/* Weather Widget Section */
+.weather-widget {
+  background: linear-gradient(120deg, #d1e8d3, #ffffff); /* Soft green gradient for a natural look */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  max-width: 500px;
+  
+  border: 1px solid #4caf50; /* A subtle green border for a natural feel */
+}
+
+.weather-widget h2 {
+  font-size: 2.5rem;
+  color: #388e3c; /* Dark green for the header */
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+/* Weather Info */
+.weather-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.weather-icon {
+  font-size: 4rem;
+  color: #ffeb3b; /* Sun yellow */
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.weather-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.temperature {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #2c6f3f; /* Dark green for temperature */
+}
+
+.temperature span {
+  display: block;
+  font-size: 4rem;
+  color: #2c6f3f;
+}
+
+/* Weather Details */
+.weather-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  flex: 1 1 30%;
+  justify-content: center;
+}
+
+.detail p {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.detail-icon {
+  width: 30px;
+  height: 30px;
+  filter: invert(40%) sepia(60%) saturate(150%) hue-rotate(150deg); /* Greenish filter for icons */
+}
+
+/* Hourly Forecast */
+.hourly-forecast {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .weather-widget h2 {
+    font-size: 2rem;
+  }
+
+  .temperature {
+    font-size: 4rem;
+  }
+
+  .weather-icon {
+    font-size: 3rem;
+  }
+
+  .weather-widget p {
+    font-size: 1rem;
+  }
+
+  .weather-details {
+    flex-direction: column;
+  }
+
+  .detail {
+    justify-content: flex-start;
+    margin-left: 10px;
+  }
+
+  .hourly-forecast {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-info {
+    flex-direction: column;
+  }
+
+  .weather-icon {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  .weather-widget {
+    padding: 20px;
+  }
+
+  .temperature {
+    font-size: 3rem;
+  }
+
+  .weather-widget h2 {
+    font-size: 1.8rem;
+  }
+}

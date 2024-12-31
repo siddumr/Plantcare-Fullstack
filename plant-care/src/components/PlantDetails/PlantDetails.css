@@ -1,0 +1,284 @@
+/* Plant Details Page Wrapper */
+.plant-details-page-wrapper {
+  padding: 20px;
+  background: linear-gradient(135deg, #e8f5e9, #f7f9fc);
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Sidebar */
+.plant-details-sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 20%;
+  height: calc(100% - 60px);
+  background: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+}
+
+.plant-details-sidebar h3 {
+  font-size: 1.6rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.plant-details-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.plant-details-sidebar ul li {
+  padding: 12px 20px;
+  margin: 10px 0;
+  background-color: #f0f4c3;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.plant-details-sidebar ul li:hover {
+  background-color: #c5e1a5;
+  transform: translateX(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content */
+.plant-details-main-content {
+  margin-left: 22%;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.plant-details-controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 0 10px;
+  gap: 15px;
+}
+
+.plant-details-search-bar,
+.plant-details-sort-dropdown {
+  width: 48%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.plant-details-search-bar:focus,
+.plant-details-sort-dropdown:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.2);
+}
+
+/* Plant Details Grid */
+.plant-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Plant Card */
+.plant-details-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.plant-details-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.plant-details-card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #e0e0e0;
+  filter: brightness(0.8);
+  transition: filter 0.3s ease;
+}
+
+.plant-details-card:hover .plant-details-card-image {
+  filter: brightness(1);
+}
+
+.plant-details-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.plant-details-info h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.plant-details-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;  /* Adjusted for better line spacing */
+  margin-bottom: 15px;
+  text-align: left;  /* Ensures left-alignment */
+  word-wrap: break-word;  /* Prevents words from overflowing */
+  white-space: normal;  /* Ensures text wraps within the container */
+}
+
+/* Plant Actions */
+.plant-details-actions {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  background: #f9f9f9;
+  border-top: 1px solid #e0e0e0;
+  border-radius: 10px;
+}
+
+.plant-details-actions button {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+}
+
+.plant-details-view-details {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.plant-details-view-details:hover {
+  background-color: #1976d2;
+  transform: scale(1.05);
+}
+
+.plant-details-edit {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+.plant-details-edit:hover {
+  background-color: #f57c00;
+  transform: scale(1.05);
+}
+
+.plant-details-delete {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.plant-details-delete:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+/* Modal */
+.plant-details-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Modal Content */
+.plant-details-modal-content {
+  max-height: 650px;  /* Set the max height to limit the content size */
+  /* Set the max height to limit the content size */
+  overflow-y: auto;   /* Enable vertical scrollbar when content exceeds max-height */
+  padding: 10px;      /* Optional padding for inner content */
+}
+
+.plant-details-modal-content h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.plant-details-modal-content p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.plant-details-modal-content button {
+  background-color: #4caf50;
+  margin-top: 20px;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.plant-details-modal-content button + button {
+  margin-left: 15px;
+}
+
+.plant-details-modal-content button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+/* Date Picker Styling */
+.plant-details-modal input[type="date"] {
+  padding: 12px;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.plant-details-modal input[type="date"]:focus {
+  border-color: #4caf50;
+  outline: none;
+  transform: scale(1.02);
+}
+
+.plant-details-modal input[type="date"]::placeholder {
+  color: #888;
+}

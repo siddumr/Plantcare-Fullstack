@@ -1,0 +1,92 @@
+.dashboard-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-bar input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Statistics Section */
+  .statistics {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .statistics h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  /* Plant List */
+  .plant-list {
+    margin-top: 20px;
+  }
+  
+  .plant-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .plant-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plant-card h4 {
+    font-size: 1.2em;
+    color: #007bff;
+  }
+  
+  .plant-card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .card-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-buttons button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .card-buttons button:nth-child(2) {
+    background-color: #ff6f61;
+  }
+  
+  .card-buttons button:nth-child(2):hover {
+    background-color: #d9534f;
+  }
+  

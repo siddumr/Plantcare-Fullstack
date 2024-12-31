@@ -1,0 +1,104 @@
+.plant-encyclopedia {
+  font-family: 'Arial', sans-serif;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.plant-encyclopedia-search-container {
+  margin-bottom: 30px;
+}
+
+.plant-encyclopedia-input {
+  width: 350px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.plant-encyclopedia-input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.plant-encyclopedia-button {
+  padding: 12px 25px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.plant-encyclopedia-button:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+.plant-encyclopedia-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.plant-encyclopedia-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.plant-encyclopedia-card {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plant-encyclopedia-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.plant-encyclopedia-card h3 {
+  font-size: 20px;
+  margin: 15px 0;
+  color: #333;
+}
+
+.plant-encyclopedia-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.plant-encyclopedia-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.plant-encyclopedia-card:hover .plant-encyclopedia-image {
+  opacity: 0.8;
+}
+
+.plant-encyclopedia-error-message {
+  color: #e74c3c;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.plant-encyclopedia-loading-message {
+  font-size: 18px;
+  color: #3498db;
+  margin-top: 20px;
+}

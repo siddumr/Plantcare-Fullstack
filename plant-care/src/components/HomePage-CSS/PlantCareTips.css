@@ -1,0 +1,109 @@
+/* General styling for the section */
+.plant-care-tips {
+  background: linear-gradient(120deg, #dff0ea, #ffffff);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.plant-care-tips h2 {
+  font-size: 2.2rem;
+  color: #4caf50;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  position: relative;
+}
+
+.plant-care-tips h2 .title-highlight {
+  display: inline-block;
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 8px;
+  border-radius: 5px;
+}
+
+.plant-care-tips ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tip-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.tip-item:hover {
+  background: #e8f5e9;
+  transform: scale(1.03);
+}
+
+.tip-icon {
+  font-size: 1.8rem;
+  color: #4caf50;
+  margin-right: 20px;
+}
+
+.tip-text {
+  font-size: 1.2rem;
+  color: #333;
+  flex: 1;
+  text-align: left;
+}
+
+.tip-item.expanded {
+  background: #f1f8e9;
+  border-color: #81c784;
+}
+
+@media (max-width: 768px) {
+  .plant-care-tips {
+    padding: 20px;
+  }
+
+  .plant-care-tips h2 {
+    font-size: 1.8rem;
+  }
+
+  .tip-text {
+    font-size: 1rem;
+  }
+
+  .tip-icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tip-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tip-icon {
+    margin-bottom: 10px;
+  }
+}
+
+/* Animated underline for heading */
+.plant-care-tips h2:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #4caf50;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}

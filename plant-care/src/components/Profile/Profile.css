@@ -1,0 +1,169 @@
+/* General Layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Profile Container */
+  .profile-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(54, 238, 5, 5);
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  .profile-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eaeaea;
+  }
+  
+  .avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #35e309;
+  }
+  
+  .profile-info {
+    margin-left: 20px;
+  }
+  
+  .profile-info h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .profile-info .email {
+    color: #636e72;
+  }
+  
+  .edit-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #13ae1b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-btn:hover {
+    background-color: #74b9ff;
+  }
+  
+  /* Personal Info Section */
+  .personal-info {
+    margin-top: 20px;
+  }
+  
+  .personal-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2d3436;
+  }
+  
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .info-grid div {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .info-grid strong {
+    display: block;
+    font-size: 0.9rem;
+    color: #636e72;
+  }
+  
+  .info-grid p {
+    margin: 5px 0 0;
+  }
+  
+  /* Recent Activities Section */
+  .recent-activities {
+    margin-top: 30px;
+  }
+  
+  .recent-activities h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .recent-activities ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .recent-activities li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 0.95rem;
+  }
+  
+  .recent-activities li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Settings Section */
+  .settings {
+    margin-top: 30px;
+  }
+  
+  .settings h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .settings-btn {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    background-color: #10a726;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .settings-btn:hover {
+    background-color: #a29bfe;
+  }
+
+  
+
+.info-grid input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.save-btn{
+  background-color: #10f410;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+}
+
+
+
+
+  
